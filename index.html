@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Agenda de Contatos</title>
+  <style>
+    /* Estilos para a tabela de contatos */
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 8px;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    /* Estilos para o formulário de cadastro */
+    form {
+      margin-bottom: 20px;
+    }
+
+    label, input[type="text"], input[type="submit"] {
+      display: block;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Agenda de Contatos</h1>
+  
+  <form id="contactForm">
+    <label for="name">Nome:</label>
+    <input type="text" id="name" required>
+    
+    <label for="phone">Telefone:</label>
+    <input type="text" id="phone" required>
+    
+    <input type="submit" value="Cadastrar">
+  </form>
+  
+  <table id="contactTable">
+    <tr>
+      <th>Nome</th>
+      <th>Telefone</th>
+    </tr>
+  </table>
+
+  <script src="app.js"></script>
+</body>
+</html>
